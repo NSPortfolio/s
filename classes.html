@@ -55,11 +55,14 @@ footer {
 </select><br><br>
       
 <script>
+function GetSelectedValue(){
 var classes = document.getElementById("classes");
-    var result = classes.options[classes.selectedIndex].value;
-    alert(result);
+var result = classes.options[classes.selectedIndex].value;
+document.getElementById("result").innerHTML = result;
+}
 </script>
-      <p style = "font-size:24px;font-family:georgia;"><span id="result2"></span></p>
+	    
+	<button type="button" onclick="GetSelectedValue()">See Options</button>
       
     </body>
  </html>
