@@ -58,6 +58,18 @@ function GetSelectedValue(){
 var classes = document.getElementById("classes");
 var result = classes.options[classes.selectedIndex].text;
 document.getElementById("result").innerHTML = result;
+	   		if (result == "Math") {result2 = "Score:0% <br> Try Again!"};
+			if (result == "English") {result2 = "Score:25% <br> Try again!"};
+			if (result == "Social Studies") {result2 = "Score:50% <br> So close! Try again!"};
+			if (result == "Science") {result2 = "Score:75% <br> So close! Try again!"};
+			if (result == "Music") {result2 = "Score:100% <br> Excellent!"};
+			if (result == "Music") {result2 = "Score:100% <br> Excellent!"};
+			if (result == "Athletic") {result2 = "Score:100% <br> Excellent!"};
+			if (result == "STEM") {result2 = "Score:100% <br> Excellent!"};
+			if (result == "Art") {result2 = "Score:100% <br> Excellent!"};	
+			if (result == "Language") {result2 = "Score:100% <br> Excellent!"};
+			if (result == "Debate/Government") {result2 = "Score:100% <br> Excellent!"};	
+			document.getElementById("result2").innerHTML = result2; 
 }
 </script>
 	    
