@@ -38,9 +38,8 @@ footer {
     left: 30px;
 }
 </style>
-
-<form id = "form1" action = " ">
-<select name="classes" id="classes">
+	    
+<select id="classes">
     <option value="">Select an Academic/Extracurricular Class</option>
     <option value="Math">Math</option>
     <option value="English">English</option>
@@ -54,24 +53,16 @@ footer {
     <option value="Language">Language</option>
     <option value="Debate/Government">Debate/Government</option>
 </select><br><br>
-      <input type = "submit" value = "Submit" style = "border: none; color:white; padding: 10px;  text-align: center; font-family:georgia; font-size:24px; background-color: RoyalBlue;">
       
 <script>
-  document.getElementById("form1").onsubmit=function() {
-      		classes = parseInt(document.querySelector('input[name = "classes"]:checked').value);
-	  
-	   		if (classes == "Math") {result2 = "Score:0% <br> Try Again!"};
-			if (classes == "English") {result2 = "Score:25% <br> Try again!"};
-			if (classes == "Social Studies") {result2 = "Score:50% <br> So close! Try again!"};
-			if (classes == "Science") {result2 = "Score:75% <br> So close! Try again!"};
-			if (classes == "Math Contest") {result2 = "Score:100% <br> Excellent!"};
-			document.getElementById("result2").innerHTML = result2; 
-			return false;
-
-		}
+var classes = document.getElementById("classes");
+    var result = classes.options[classes.selectedIndex].value;
+    alert(result);
 </script>
       <p style = "font-size:24px;font-family:georgia;"><span id="result2"></span></p>
       
     </body>
  </html>
+	  
+	   
 	  
