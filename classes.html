@@ -38,7 +38,8 @@ footer {
     left: 30px;
 }
 </style>
-      
+
+<form id = "form1" action = " ">
 <select name="classes" id="classes">
     <option value="">Select an Academic/Extracurricular Class</option>
     <option value="Math">Math</option>
@@ -53,20 +54,17 @@ footer {
     <option value="Language">Language</option>
     <option value="Debate/Government">Debate/Government</option>
 </select>
-      
+      <input type = "submit" value = "Submit" style = "border: none; color:white; padding: 10px;  text-align: center; font-family:georgia; font-size:24px; background-color: RoyalBlue;">
       
 <script>
-  document.getElementById("classes").onsubmit=function() {
-      		vocab = parseInt(document.querySelector('input[name = "name"]:checked').value);
-   
-	   		result = vocab + why + countries + safety;
-	   		document.getElementById("grade").innerHTML = result;
-
-	   		if (result == 0) {result2 = "Score:0% <br> Try Again!"};
-			if (result == 25) {result2 = "Score:25% <br> Try again!"};
-			if (result == 50) {result2 = "Score:50% <br> So close! Try again!"};
-			if (result == 75) {result2 = "Score:75% <br> So close! Try again!"};
-			if (result == 100) {result2 = "Score:100% <br> Excellent!"};
+  document.getElementById("form1").onsubmit=function() {
+      		classes = parseInt(document.querySelector('input[name = "classes"]:checked').value);
+	  
+	   		if (classes == "Math") {result2 = "Score:0% <br> Try Again!"};
+			if (classes == "English") {result2 = "Score:25% <br> Try again!"};
+			if (classes == "Social Studies") {result2 = "Score:50% <br> So close! Try again!"};
+			if (classes == "Science") {result2 = "Score:75% <br> So close! Try again!"};
+			if (classes == "Math Contest") {result2 = "Score:100% <br> Excellent!"};
 
 			return false;
 
@@ -77,4 +75,4 @@ footer {
     </body>
  </html>
        
-       
+
