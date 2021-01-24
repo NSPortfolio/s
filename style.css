@@ -7,3 +7,9 @@
   bottom: 20px;
   left: 20px;
 }
+
+.body {
+  background-image: url('https://user-images.githubusercontent.com/76495035/105619832-13104400-5dbc-11eb-9797-e57c7d2d0f22.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+      }
