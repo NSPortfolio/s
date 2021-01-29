@@ -45,7 +45,7 @@ footer {
 }
 </style>
 	    
-<select id="classes" onchange="window.location = jQuery('#urlSelect option:selected').val();">
+<select id="classes" onchange="window.location = this.options[this.selectedIndex].value">
     <option value="">Select an Academic/Extracurricular Class</option>
     <option value="https://times4everyone.github.io/Scholarstein/mathclasses.html" >Math</option>
     <option value="2">English</option>
