@@ -47,7 +47,6 @@ footer {
 	    
 <select id="classes">
     <option value="">Select an Academic/Extracurricular Class</option>
-<a href="#mathclasses.html">Link 1</a>
     <option value="1" >Math</option>
     <option value="2">English</option>
     <option value="3">Social Studies</option>
@@ -64,7 +63,7 @@ footer {
 function GetSelectedValue(){
 var classes = document.getElementById("classes");
 var result = classes.options[classes.selectedIndex].value;
-			if (result == 1) {result2 = 
+			if (result == 1) {result2 = window.location.href = 'https://times4everyone.github.io/Scholarstein/mathclasses.html';
 			document.write("<p>"+"Kumon Math and Reading Program".link("https://www.kumon.com/") + "</p>");
 			document.write("<p>"+"Spirit of Math".link("https://spiritofmath.com/") + "</p>");
 			document.write("<p>"+"Russian School of Mathematics".link("https://www.russianschool.com/") + "</p>");
